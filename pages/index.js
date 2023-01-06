@@ -22,7 +22,7 @@ export default function Home({ users }) {
           </th>
         </tr>
         {reactData.map((user, index) => (
-          <tr>
+          <tr key={index}>
             <td>{user.name}</td>
             <td>{user.username}</td>
             <td>{user.email}</td>
@@ -39,7 +39,7 @@ export default function Home({ users }) {
           </th>
         </tr>
         {users.map((user, index) => (
-          <tr>
+          <tr key={index}>
             <td>{user.name}</td>
             <td>{user.username}</td>
             <td>{user.email}</td>
